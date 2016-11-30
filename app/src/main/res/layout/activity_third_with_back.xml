@@ -1,53 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_third_with_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="concilioblanco.unex.es.activityintentssesion.MainActivity">
+    tools:context="concilioblanco.unex.es.activityintentssesion.ThirdWithBackActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:hint="Escribe sobre mi" />
-
-        <Button
-            android:text="Guardar Texto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button_saveText" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:id="@+id/textView" />
+            android:id="@+id/textView_counter_3b"
+            android:textSize="18sp" />
 
         <Button
-            android:text="Explicito"
+            android:text="Incrementar Contador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button_explicit" />
+            android:id="@+id/button_increment_3b"
+            android:textSize="14sp" />
 
         <Button
-            android:text="Implicito"
+            android:text="Volver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button_implicit" />
+            android:id="@+id/button_back_3b" />
+
     </LinearLayout>
 </RelativeLayout>
